@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">second_phase_todo</string>
+    <string name="title">Title..</string>
+    <string name="details">Details..</string>
+</resources>
