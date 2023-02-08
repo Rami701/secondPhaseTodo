@@ -2,4 +2,9 @@
     <string name="app_name">second_phase_todo</string>
     <string name="title">Title..</string>
     <string name="details">Details..</string>
+    <string name="title_placeholder">Title placeholder</string>
+    <string name="details_placeholder">Details placeholder</string>
+    <string name="date_placeholder">Date placeholder</string>
+    <string name="btnDeleteString">Delete</string>
+    <string name="btnDoneString">Done</string>
 </resources>

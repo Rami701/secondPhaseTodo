@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.fragment.app.DialogFragment;
 
@@ -32,8 +33,17 @@ public class FormDialogFragment extends DialogFragment {
             @Override
             public void onClick(View v) {
                 MainActivity activity = (MainActivity) getActivity();
-                activity.addTodo(etTitle.getText().toString(), etDetails.getText().toString(), getDate());
-                dismiss();
+                String title = etTitle.getText().toString();
+                String details = etDetails.getText().toString();
+
+                if (validate(title, details)){
+                    activity.addTodo(title, details, getDate());
+                    dismiss();
+                }else{
+                    Toast.makeText(activity, "Title and Details can not be empty", Toast.LENGTH_SHORT).show();
+                }
+
+                
             }
         });
 
@@ -53,6 +63,13 @@ public class FormDialogFragment extends DialogFragment {
         String day = String.valueOf(datePicker.getDayOfMonth());
 
         return "Due Date: " + year + " / " + month + " / " + day;
+    }
+
+    private boolean validate(String title, String details){
+        if(title.equals("") || details.equals("")){
+            return false;
+        }
+        return true;
     }
 
 }

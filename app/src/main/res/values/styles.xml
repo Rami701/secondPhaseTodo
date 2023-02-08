@@ -5,4 +5,35 @@
         <item name="android:layout_width">90dp</item>
         <item name="android:layout_height">50dp</item>
     </style>
+
+    <style name="cardTitleStyle">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="cardDetailsStyle">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:overScrollMode">always</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="cardDateStyle">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
 </resources>
