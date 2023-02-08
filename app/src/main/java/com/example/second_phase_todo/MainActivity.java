@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -26,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FormDialogFragment formDialogFragment = new FormDialogFragment();
-                formDialogFragment.show(getSupportFragmentManager(), "form");
+                TodoFormDialogFragment todoFormDialogFragment = new TodoFormDialogFragment();
+                todoFormDialogFragment.show(getSupportFragmentManager(), "form");
             }
         });
 

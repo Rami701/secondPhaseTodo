@@ -7,4 +7,6 @@
     <string name="date_placeholder">Date placeholder</string>
     <string name="btnDeleteString">Delete</string>
     <string name="btnDoneString">Done</string>
+    <string name="gradePlaceholder">Grade: 76 / 100</string>
+    <string name="realGradePlaceholder">Real Grade: 8 / 10</string>
 </resources>

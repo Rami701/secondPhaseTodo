@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SubjectGradesActivity"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/txtSubjectName"
+        android:text="Subject: Math"
+        style="@style/mainTitleStyle" />
+
+    <TextView
+        android:id="@+id/txtSubjectTotal"
+        style="@style/mainTitleStyle"
+        android:text="Total: 34 of (45 / 100)"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gradesRv"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:scrollbars="vertical"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/GradesFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+
+        android:src="@drawable/ic_baseline_add_24" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

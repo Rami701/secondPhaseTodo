@@ -28,11 +28,11 @@ public class ToDoAdapter extends RecyclerView.Adapter<ToDoAdapter.ViewHolder>{
     @NonNull
     @Override
     public ToDoAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        CardView v = (CardView) LayoutInflater.from(parent.getContext()).inflate(R.layout.card,
+        CardView cardView = (CardView) LayoutInflater.from(parent.getContext()).inflate(R.layout.todo_card,
                 parent,
                 false);
 
-        return new ViewHolder(v);
+        return new ViewHolder(cardView);
     }
 
     @Override

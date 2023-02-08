@@ -8,21 +8,14 @@
 
     <EditText
         android:id="@+id/etTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:hint="@string/title"
-        android:textColor="@color/black"/>
+        style="@style/formTextInputStyle" />
 
 
     <EditText
         android:id="@+id/etDetails"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:maxLines="3"
-        android:scrollbars="vertical"
-        android:overScrollMode="always"
         android:hint="@string/details"
-        android:textColor="@color/black"/>
+        style="@style/formTextInputStyle" />
 
 
     <DatePicker
@@ -33,9 +26,8 @@
 
     <Button
         android:id="@+id/btnSubmit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Submit" />
+        android:text="Submit"
+        style="@style/formButtonStyle" />
 
     <Button
         android:id="@+id/btnCancel"
